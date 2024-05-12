@@ -1,7 +1,16 @@
 body {
     width:100%;
-    font-family: "Sierra Madre"; /* On définit une police par défaut pour l'ensemble du site */
-        background-color: rgb(41, 41, 41);
+    font-family: "Kanit", sans-serif;
+    color: white;
+    background-color: rgb(41, 41, 41);
+}
+
+
+#titre{
+  display: block;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 header/*bandeau haut*/
@@ -10,8 +19,8 @@ header/*bandeau haut*/
     left: 2%;
     top: 2%;
     width:96%;
-    height: 90px;
-    border-radius: 20px 20px 0px 0px;
+    height: 150px;
+    border-radius: 20px;
     background-color: rgb(247, 98, 26);
     box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.5);
 
@@ -31,6 +40,36 @@ h1
     margin:auto;
     text-align: center;
     text-shadow: 6px 6px 25px rgba(0, 0, 0, 0.5);
+}
+
+#txt1{
+  margin-top: 200px;
+  font-size:22px;
+  width:90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  text-shadow: 6px 6px 25px rgba(0, 0, 0, 0.5);
+}
+#txt{
+  font-size:22px;
+  width:90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  text-shadow: 6px 6px 25px rgba(0, 0, 0, 0.5);
+}
+
+#image{
+  display: block;
+  width: 70%;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+  border-radius: 10px;
+  box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.5);
+
 }
 
 #intro
@@ -62,128 +101,47 @@ h1
   margin-bottom: 100px;
 }
 
-
-
-
-
-
-
-
-:root{
-  --hauteur-menu: 40px;
-}
-
-* {
-  margin: 0px;
-  padding: 0px;
-  font-family: Montserrat, sans-serif;
-}
-
-nav {
-  width: 20%;
-  font-size: 18px;
-  position: sticky;
-  top: 0;
-}
-
-nav > ul {
-  display: flex;
-  text-align: center;
-  box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.3);
-  height: var(--hauteur-menu);
-}
-
-nav ul {
-  list-style-type: none;
-}
-
-nav > ul > li {
-  background-color: white;
-  position: relative;
-  height: 100%;
-  flex: 1;
-}
-f7621a
-nav > ul > li:hover > a{
-  color: #f7621a;
-}
-
-nav > ul > li > a {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-li a {
-  text-decoration: none;
-  color: black;
-}
-
-.menu-deroulant > a:after{
-  content: '❯';
-  font-size: 15px;
-  margin-left: 7px;
-  display: inline-block;
-}
-
-.menu-deroulant:hover > a:after{
-  animation: rotationFleche 0.2s linear forwards;
-}
-
-@keyframes rotationFleche {
-  0% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(45deg);
-  }
-  100%{
-    transform: rotate(90deg);
-  }
-}
-
-.sous-menu {
-  margin-top: var(--hauteur-menu);
-  width: 100%;
-  text-align: left;
-  overflow: hidden;
-  max-height: 0;
-  border-radius: 2px;
-  background-color: white;
-}
-
-.menu-deroulant:hover > .sous-menu {
-  animation: apparitionSousMenu 1s forwards;
-}
-
-@keyframes apparitionSousMenu {
-  0% {
-    box-shadow: 0px 3px 3px 1px rgba(0,0,0,0);
-    border-top: 3px solid #f7621a;
-  }
-  30% {
-    box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.3);
-  }
-  100% {
-    max-height: 50em;
-    border-top: 3px solid #f7621a;
-    box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.3);
-  }
-}
-
-.sous-menu > li:hover {
-  background-color: rgba(247, 98, 26, 0.3);
-}
-
-.sous-menu > li > a {
-  align-items: center;
-  display: flex;
-  height: 50px;
-  padding-left: 20px;
-  width: 100%;
-}
-
-.sous-menu > li:hover > a {
+#mention{
   color: white;
+  text-align: center;
+  font-size: 16px;
+  font-family: "Kanit", sans-serif;
+}
+
+nav ul{
+  list-style-type: none;
+  width: 94%;
+}
+
+nav li{
+  float:left;
+  width: 25%;
+  text-align: center;
+}
+
+nav ul ::after{
+  content: "";
+  display: table;
+  clear:both;
+}
+
+nav{
+  font-family: "Kanit", sans-serif;
+  font-size:120%;
+  width: 94%;
+  margin: 0 auto;
+  top: 0px;
+
+}
+
+nav a{
+  display:block;
+  text-decoration: none;
+  color: white;
+  border-bottom: 2px solid transparent
+  padding: 10px 0px;
+}
+
+nav a:hover{
+  border-bottom: 2px solid gold;
 }
