@@ -9,8 +9,8 @@ from random import*
 angle = 0
 fond = True
 état = 0
-x = 1600
-y = 900
+x = 1680
+y = 1050
 pygame.init()
 flags = pygame.FULLSCREEN
 screen = pygame.display.set_mode((x,y), flags)
@@ -193,8 +193,8 @@ while fond == True:
         #derriere le nom des fichier il y a soit "f0,f1,f2" cela correspond a l'état du tank(fissure0,fissure1,fissure2)
         screen.blit(tankvert_f0,(10,150))
         screen.blit(tankrouge_f0,(10,500))
-        screen.blit(tankbleu_f0,(1275,150))
-        screen.blit(tankrose_f0,(1275,500))
+        screen.blit(tankbleu_f0,(1375,150))
+        screen.blit(tankrose_f0,(1375,500))
         if position_souris[0] > 10  and position_souris[0] < 260 and position_souris[1] > 150 and position_souris[1] < 400 : # prend la position des tanks en l'occurence "vert" dans ce cas:
             if bouton_souris[0] == 1: # clique gauche de la souris correspond au choix du joueur n°1
                     choix_J1 = 1
@@ -224,26 +224,26 @@ while fond == True:
         if position_souris[0] > 1375  and position_souris[0] < 1675 and position_souris[1] > 150 and position_souris[1] < 400 :
             if bouton_souris[0] == 1:
                     choix_J1 = 1
-                    xJ1 = 1525-228
+                    xJ1 = 1525-128
                     yJ1 = 250
                     joueur1_choix = pygame.transform.scale(pygame.image.load("tankbleu_f0.png"),(100,100))
                     couleurJ1 = ["tankbleu_f0.png","tankbleu_f1.png","tankbleu_f2.png"]
             if bouton_souris[2] == 1:
                     choix_J2 = 1
-                    xJ2 = 1525-228
+                    xJ2 = 1525-128
                     yJ2 = 250
                     joueur2_choix = pygame.transform.scale(pygame.image.load("tankbleu_f0.png"),(100,100))
                     couleurJ2 = ["tankbleu_f0.png","tankbleu_f1.png","tankbleu_f2.png"]
         if position_souris[0] > 1375  and position_souris[0] < 1675 and position_souris[1] > 500 and position_souris[1] < 750 :
             if bouton_souris[0] == 1:
                     choix_J1 = 1
-                    xJ1 = 1525-228
+                    xJ1 = 1525-128
                     yJ1 = 600
                     joueur1_choix = pygame.transform.scale(pygame.image.load("tankrose_f0.png"),(100,100))
                     couleurJ1 = ["tankrose_f0.png","tankrose_f1.png","tankrose_f2.png"]
             if bouton_souris[2] == 1:
                     choix_J2 = 1
-                    xJ2 = 1525-228
+                    xJ2 = 1525-128
                     yJ2 = 600
                     joueur2_choix = pygame.transform.scale(pygame.image.load("tankrose_f0.png"),(100,100))
                     couleurJ2 = ["tankrose_f0.png","tankrose_f1.png","tankrose_f2.png"]

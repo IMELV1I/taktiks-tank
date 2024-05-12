@@ -13,6 +13,24 @@ body {
   margin-right: auto;
 }
 
+#version{
+  width:30%;
+  height: 150px;
+  border-radius: 20px;
+  background-color: rgb(247, 98, 26);
+  box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.5);
+  font-size:22px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  text-shadow: 6px 6px 25px rgba(0, 0, 0, 0.5);
+  margin-bottom: 30px;
+  margin-top: 100px;
+  color:white;
+  line-height:90px;
+  height:90px;
+}
+
 header/*bandeau haut*/
 {
     position: fixed;
@@ -47,7 +65,7 @@ h1
 }
 
 #txt1{
-  margin-top: 200px;
+  margin-top: 300px;
   font-size:22px;
   width:90%;
   margin-left: auto;
@@ -55,6 +73,22 @@ h1
   text-align: center;
   text-shadow: 6px 6px 25px rgba(0, 0, 0, 0.5);
 }
+
+#txt2{
+  margin-top: 200px;
+  font-size:22px;
+  width:100%;
+  margin-left: 10%;
+  text-shadow: 6px 6px 25px rgba(0, 0, 0, 0.5);
+}
+
+#liste_maj{
+  font-size:22px;
+  width:100%;
+  margin-left: 15%;
+  text-shadow: 6px 6px 25px rgba(0, 0, 0, 0.5);
+}
+
 #txt{
   font-size:22px;
   width:90%;
